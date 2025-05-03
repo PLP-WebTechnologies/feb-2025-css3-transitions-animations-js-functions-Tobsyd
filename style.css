@@ -1,0 +1,17 @@
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    margin: 20px;
+    transition: transform 1s;
+  }
+  
+  #box.animate {
+    animation: slideRight 1s forwards;
+  }
+  
+  @keyframes slideRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+  }
